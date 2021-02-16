@@ -1,0 +1,57 @@
+{
+    "name": "routify-snowpack-template",
+    "author": "CitRUS",
+    "license": "MIT",
+    "scripts": {
+        "dev": "run-p dev:*",
+        "dev:validate": "run-p validate:*:watch",
+        "dev:routify": "routify",
+        "dev:snowpack": "snowpack dev",
+        "prod": "run-s prod:*",
+        "prod:validate": "run-s validate:typescript validate:svelte",
+        "prod:routify": "routify -b",
+        "prod:snowpack": "snowpack build",
+        "start": "spassr",
+        "validate": "pnpm validate:typescript && pnpm validate:svelte",
+        "validate:typescript": "tsc --noEmit",
+        "validate:typescript:watch": "pnpm validate:typescript -- --watch",
+        "validate:svelte": "svelte-check",
+        "validate:svelte:watch": "pnpm validate:svelte -- --watch",
+        "prettier": "prettier --check",
+        "prettier:fix": "pnpm prettier -- --write",
+        "prettier:all": "pnpm prettier -- \"**/*.{html,md,json,yml,yaml,js,ts,svelte,css,pcss}\"",
+        "prettier:fix:all": "pnpm prettier:all -- --write"
+    },
+    "routify": {
+        "extensions": "svelte"
+    },
+    "spassr": {
+        "entrypoint": "./dist/template.html",
+        "ssr": true,
+        "port": 5000
+    },
+    "devDependencies": {
+        "@snowpack/plugin-svelte": "3.5.2",
+        "@tsconfig/svelte": "1.0.10",
+        "npm-run-all": "4.1.5",
+        "postcss": "8.2.6",
+        "postcss-import": "14.0.0",
+        "postcss-load-config": "3.0.1",
+        "postcss-preset-env": "6.7.0",
+        "prettier": "2.2.1",
+        "prettier-plugin-svelte": "2.1.4",
+        "snowpack": "3.0.11",
+        "svelte-check": "1.1.34",
+        "svelte-preprocess": "4.6.8",
+        "tailwindcss": "2.0.3",
+        "tslib": "2.1.0",
+        "typescript": "4.1.5"
+    },
+    "dependencies": {
+        "@mdi/js": "5.9.55",
+        "@roxi/routify": "2.12.4",
+        "mdi-svelte": "1.1.2",
+        "spassr": "2.2.0",
+        "svelte": "3.32.3"
+    }
+}

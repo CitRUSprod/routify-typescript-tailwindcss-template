@@ -1,0 +1,14 @@
+{
+    "extends": "@tsconfig/svelte/tsconfig.json",
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "es2020",
+        "importHelpers": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"],
+            "@routify/*": ["./.routify/*"]
+        }
+    },
+    "include": ["./src/**/*.ts", "./src/**/*.svelte"]
+}
