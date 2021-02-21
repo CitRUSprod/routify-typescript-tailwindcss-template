@@ -25,8 +25,7 @@ module.exports = {
     },
     purge: {
         enabled: isProd,
-        mode: "all",
-        content: ["./assets/template.html", "./src/**/*.svelte"],
+        content: ["./assets/template.html", "./src/**/*.{css,pcss,svelte}"],
         options: {
             defaultExtractor(content) {
                 return [
