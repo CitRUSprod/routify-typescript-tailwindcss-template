@@ -9,7 +9,6 @@ devDependencies:
   '@snowpack/plugin-run-script': 2.3.0
   '@snowpack/plugin-svelte': 3.5.2_b625cb63fcd58c64786c5c5800f54833
   '@snowpack/plugin-typescript': 1.2.1_typescript@4.1.5
-  '@tsconfig/svelte': 1.0.10
   cssnano: 4.1.10
   npm-run-all: 4.1.5
   postcss: 8.2.6
@@ -23,7 +22,6 @@ devDependencies:
   svelte-check: 1.1.34_cfb6e801021d304c82d4b6e88c4016e9
   svelte-preprocess: 4.6.8_b625cb63fcd58c64786c5c5800f54833
   tailwindcss: 2.0.3_postcss@8.2.6
-  tslib: 2.1.0
   typescript: 4.1.5
 lockfileVersion: 5.2
 packages:
@@ -149,10 +147,6 @@ packages:
       typescript: '*'
     resolution:
       integrity: sha512-wU+JNaMVkqGsqTaUY7TnEMhGt/3URTgA9dpMCtZX6wn/ceA7Gwlmue/sOLynf0OTNLygHPvjiQECQYkEi3LTtg==
-  /@tsconfig/svelte/1.0.10:
-    dev: true
-    resolution:
-      integrity: sha512-EBrpH2iXXfaf/9z81koiDYkp2mlwW2XzFcAqn6qh7VKyP8zBvHHAQzNhY+W9vH5arAjmGAm5g8ElWq6YmXm3ig==
   /@types/node/12.20.0:
     dev: false
     resolution:
@@ -3842,10 +3836,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-3n1qG+/5kg+jrbTzwAykB5yRYtQCTqOGKq5U5PE3b0a1/mzo6snDhjGS0zJVJunO0NrT3Dg1MLy5TjWP/UJppg==
-  /tslib/2.1.0:
-    dev: true
-    resolution:
-      integrity: sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
   /tunnel-agent/0.6.0:
     dependencies:
       safe-buffer: 5.2.1
@@ -4119,7 +4109,6 @@ specifiers:
   '@snowpack/plugin-run-script': 2.3.0
   '@snowpack/plugin-svelte': 3.5.2
   '@snowpack/plugin-typescript': 1.2.1
-  '@tsconfig/svelte': 1.0.10
   cssnano: 4.1.10
   mdi-svelte: 1.1.2
   npm-run-all: 4.1.5
@@ -4136,5 +4125,4 @@ specifiers:
   svelte-check: 1.1.34
   svelte-preprocess: 4.6.8
   tailwindcss: 2.0.3
-  tslib: 2.1.0
   typescript: 4.1.5

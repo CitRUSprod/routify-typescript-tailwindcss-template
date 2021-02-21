@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import TheHeader from "./_components/TheHeader.svelte"
 </script>
 
