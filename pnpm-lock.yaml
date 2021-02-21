@@ -6,7 +6,9 @@ dependencies:
   svelte: 3.32.3
 devDependencies:
   '@snowpack/plugin-build-script': 2.1.0
+  '@snowpack/plugin-run-script': 2.3.0
   '@snowpack/plugin-svelte': 3.5.2_b625cb63fcd58c64786c5c5800f54833
+  '@snowpack/plugin-typescript': 1.2.1_typescript@4.1.5
   '@tsconfig/svelte': 1.0.10
   cssnano: 4.1.10
   npm-run-all: 4.1.5
@@ -116,6 +118,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-rNuNxI5fM4QieNSOlwhZVD+0iA0nhEAS8MgXStCeH3mr0lC8dVLSYRTt83bS4Q6pxF9zFFfY5z+CTq/JVz8aUw==
+  /@snowpack/plugin-run-script/2.3.0:
+    dependencies:
+      execa: 5.0.0
+      npm-run-path: 4.0.1
+    dev: true
+    resolution:
+      integrity: sha512-rIbD67uzTPkzemMFbw5seUm/hZFrToTSqN/SGGq5XaU45ftX2sCRzp0lqSH+lZYhC5QTSm5RxXW1HcuPOlbPXQ==
   /@snowpack/plugin-svelte/3.5.2_b625cb63fcd58c64786c5c5800f54833:
     dependencies:
       rollup-plugin-svelte: 7.1.0_svelte@3.32.3
@@ -130,6 +139,16 @@ packages:
       typescript: '*'
     resolution:
       integrity: sha512-i7OhkIRNt1uJ/y3qpowlU7icjtSgFPIl/GjMmBxhtwoIqHAnowFLh1Ur5G6S36GCFo65ymClnYfEIM/2x1+wPQ==
+  /@snowpack/plugin-typescript/1.2.1_typescript@4.1.5:
+    dependencies:
+      execa: 5.0.0
+      npm-run-path: 4.0.1
+      typescript: 4.1.5
+    dev: true
+    peerDependencies:
+      typescript: '*'
+    resolution:
+      integrity: sha512-wU+JNaMVkqGsqTaUY7TnEMhGt/3URTgA9dpMCtZX6wn/ceA7Gwlmue/sOLynf0OTNLygHPvjiQECQYkEi3LTtg==
   /@tsconfig/svelte/1.0.10:
     dev: true
     resolution:
@@ -4097,7 +4116,9 @@ specifiers:
   '@mdi/js': 5.9.55
   '@roxi/routify': 2.12.4
   '@snowpack/plugin-build-script': 2.1.0
+  '@snowpack/plugin-run-script': 2.3.0
   '@snowpack/plugin-svelte': 3.5.2
+  '@snowpack/plugin-typescript': 1.2.1
   '@tsconfig/svelte': 1.0.10
   cssnano: 4.1.10
   mdi-svelte: 1.1.2

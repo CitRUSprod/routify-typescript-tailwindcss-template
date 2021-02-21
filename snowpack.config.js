@@ -33,6 +33,7 @@ module.exports = {
         }
     ],
     plugins: [
+        "@snowpack/plugin-typescript",
         "@snowpack/plugin-svelte",
         [
             "@snowpack/plugin-build-script",
@@ -40,6 +41,13 @@ module.exports = {
                 input: [".css", ".pcss"],
                 output: [".css"],
                 cmd: "postcss $FILE"
+            }
+        ],
+        [
+            "@snowpack/plugin-run-script",
+            {
+                cmd: "svelte-check",
+                watch: "svelte-check --watch"
             }
         ]
     ]
