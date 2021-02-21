@@ -1,24 +1,8 @@
-<script lang="ts">
-    import { url } from "@roxi/routify"
-</script>
-
-<div class="e404">
-    <div class="huge">404</div>
-    <div class="big">
-        Page not found.
-        <a href="{$url('../')}">Go back</a>
+<div class="flex justify-center items-center min-h-full">
+    <div class="p-8 text-center border-2 border-red-500 rounded-lg">
+        <h1 class="text-4xl">Page not found</h1>
+        <h2 class="text-2xl mt-4 text-blue-500 underline">
+            <a href="/">Go to home page</a>
+        </h2>
     </div>
 </div>
-
-<style>
-    .huge {
-        font-size: 12rem;
-    }
-    .e404 {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-</style>
