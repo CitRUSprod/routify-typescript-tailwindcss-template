@@ -7,20 +7,24 @@ function svelteClassColonExtractor(content) {
     return content.match(/(?<=class:)(\w+)/gm) || []
 }
 
+function toKebabCase(str) {
+    const words = str.match(/(^|[A-Z])[a-z]*/g)
+    const result = words.map(word => word.toLowerCase()).join("-")
+    return result
+}
+
+function convertObjectKeysToKebabCase(obj) {
+    const entries = Object.entries(obj)
+    const newEntries = entries.map(([key, value]) => [toKebabCase(key), value])
+    const result = Object.fromEntries(newEntries)
+    return result
+}
+
 module.exports = {
     darkMode: "class",
     theme: {
         extend: {
-            colors: {
-                gray: colors.gray,
-                red: colors.red,
-                yellow: colors.yellow,
-                green: colors.green,
-                blue: colors.blue,
-                indigo: colors.indigo,
-                purple: colors.purple,
-                pink: colors.pink
-            }
+            colors: convertObjectKeysToKebabCase(colors)
         }
     },
     purge: {
