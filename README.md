@@ -18,6 +18,6 @@ pnpm dev
 ### Production mode
 
 ```sh
-pnpm prod
-pnpm start
+pnpm build
+pnpm serve
 ```
