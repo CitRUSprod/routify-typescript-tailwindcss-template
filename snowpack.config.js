@@ -36,14 +36,6 @@ module.exports = {
         "@snowpack/plugin-typescript",
         "@snowpack/plugin-svelte",
         [
-            "@snowpack/plugin-build-script",
-            {
-                input: [".css", ".pcss"],
-                output: [".css"],
-                cmd: "postcss $FILE"
-            }
-        ],
-        [
             "@snowpack/plugin-run-script",
             {
                 cmd: "svelte-check",
