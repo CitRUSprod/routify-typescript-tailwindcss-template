@@ -2,14 +2,14 @@ const isDev = process.env.NODE_ENV === "development"
 
 module.exports = {
     devOptions: {
-        port: 5000
+        port: 5000,
+        output: "stream"
     },
     buildOptions: {
         out: "dist",
         sourcemap: isDev
     },
     optimize: {
-        bundle: true,
         minify: true,
         target: "es2020"
     },
@@ -34,13 +34,14 @@ module.exports = {
     ],
     plugins: [
         "@snowpack/plugin-typescript",
-        "@snowpack/plugin-svelte",
         [
             "@snowpack/plugin-run-script",
             {
-                cmd: "svelte-check",
-                watch: "svelte-check --watch"
+                cmd: "svelte-check --output human",
+                watch: "$1 --watch"
             }
-        ]
+        ],
+        "@snowpack/plugin-svelte",
+        "snowpack-plugin-hash"
     ]
 }

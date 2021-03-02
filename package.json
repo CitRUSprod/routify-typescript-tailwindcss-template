@@ -21,11 +21,6 @@
     "routify": {
         "extensions": "svelte"
     },
-    "spassr": {
-        "entrypoint": "./dist/template.html",
-        "ssr": true,
-        "port": 5000
-    },
     "devDependencies": {
         "@snowpack/plugin-run-script": "2.3.0",
         "@snowpack/plugin-svelte": "3.5.2",
@@ -38,6 +33,7 @@
         "prettier": "2.2.1",
         "prettier-plugin-svelte": "2.2.0",
         "snowpack": "3.0.13",
+        "snowpack-plugin-hash": "0.14.2",
         "svelte-check": "1.1.36",
         "svelte-hmr": "0.12.7",
         "svelte-preprocess": "4.6.9",
