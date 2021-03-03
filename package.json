@@ -9,7 +9,7 @@
         "build": "run-s build:*",
         "build:routify": "routify -b",
         "build:snowpack": "snowpack build",
-        "serve": "spassr",
+        "start": "spassr",
         "validate": "run-s validate:*",
         "validate:typescript": "tsc --noEmit",
         "validate:svelte": "svelte-check",

@@ -19,5 +19,5 @@ pnpm dev
 
 ```sh
 pnpm build
-pnpm serve
+pnpm start
 ```
