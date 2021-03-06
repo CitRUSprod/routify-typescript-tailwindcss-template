@@ -1,7 +1,5 @@
 {
     "name": "routify-typescript-tailwindcss-template",
-    "author": "CitRUS",
-    "license": "MIT",
     "scripts": {
         "dev": "run-p dev:*",
         "dev:routify": "routify",
