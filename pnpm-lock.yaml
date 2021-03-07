@@ -1,28 +1,28 @@
 dependencies:
   '@mdi/js': 5.9.55
-  '@roxi/routify': 2.12.12
+  '@roxi/routify': 2.14.0
   mdi-svelte: 1.1.2
-  spassr: 2.2.0
+  spassr: 2.2.3
   svelte: 3.35.0
 devDependencies:
   '@snowpack/plugin-run-script': 2.3.0
-  '@snowpack/plugin-svelte': 3.5.2_a08180c022308a34fe311f76d5152fb0
-  '@snowpack/plugin-typescript': 1.2.1_typescript@4.2.2
+  '@snowpack/plugin-svelte': 3.5.2_f82e5bdae6fd1f4cca4d138b50406ebe
+  '@snowpack/plugin-typescript': 1.2.1_typescript@4.2.3
   cssnano: 4.1.10
   npm-run-all: 4.1.5
-  postcss: 8.2.6
+  postcss: 8.2.7
   postcss-load-config: 3.0.1
   postcss-preset-env: 6.7.0
   prettier: 2.2.1
   prettier-plugin-svelte: 2.2.0_prettier@2.2.1+svelte@3.35.0
   snowpack: 3.0.13
   snowpack-plugin-hash: 0.14.2_snowpack@3.0.13
-  svelte-check: 1.1.36_bb3f26321fb3a79de3e84e6f9a3793b4
-  svelte-hmr: 0.12.7_svelte@3.35.0
-  svelte-preprocess: 4.6.9_a08180c022308a34fe311f76d5152fb0
-  svelte-windicss-preprocess: 2.2.4
-  typescript: 4.2.2
-  windicss: 2.2.2
+  svelte-check: 1.2.3_8f10dc7cb679adeddc44418817500f8a
+  svelte-hmr: 0.12.9_svelte@3.35.0
+  svelte-preprocess: 4.6.9_f82e5bdae6fd1f4cca4d138b50406ebe
+  svelte-windicss-preprocess: 2.3.1
+  typescript: 4.2.3
+  windicss: 2.2.8
 lockfileVersion: 5.2
 packages:
   /@ampproject/remapping/1.0.1:
@@ -156,7 +156,7 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-8Broas6vTtW4GIXTAHDoE32hnN2M5ykgCpWGbuXHQ15vEMqr23pB76e/GZcYsZCHALv50ktd24qhEyKr6wBtow==
-  /@roxi/routify/2.12.12:
+  /@roxi/routify/2.14.0:
     dependencies:
       '@roxi/ssr': 0.2.1
       '@types/node': 12.20.4
@@ -172,7 +172,7 @@ packages:
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-1ngx1jEHJKQHGeBb24Vx2EclteG9Lk8pga17hXrxHt2cCn5P4Pom0dh7Cba4ASa5WE+5Tk1IwpEe71hoR6AMSQ==
+      integrity: sha512-7hh/Nwp5uRgOGRee3/iMi40Nyc0oXxMYtpTTltfhFW/xISiXozEdRYJP7mav7IqjYgBZRJ4vIdeb1qN+aoL2bQ==
   /@roxi/ssr/0.2.1:
     dependencies:
       bufferutil: 4.0.3
@@ -189,12 +189,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-rIbD67uzTPkzemMFbw5seUm/hZFrToTSqN/SGGq5XaU45ftX2sCRzp0lqSH+lZYhC5QTSm5RxXW1HcuPOlbPXQ==
-  /@snowpack/plugin-svelte/3.5.2_a08180c022308a34fe311f76d5152fb0:
+  /@snowpack/plugin-svelte/3.5.2_f82e5bdae6fd1f4cca4d138b50406ebe:
     dependencies:
       rollup-plugin-svelte: 7.1.0_svelte@3.35.0
       svelte: 3.35.0
       svelte-hmr: 0.12.7_svelte@3.35.0
-      svelte-preprocess: 4.6.9_a08180c022308a34fe311f76d5152fb0
+      svelte-preprocess: 4.6.9_f82e5bdae6fd1f4cca4d138b50406ebe
     dev: true
     peerDependencies:
       postcss: '*'
@@ -203,11 +203,11 @@ packages:
       typescript: '*'
     resolution:
       integrity: sha512-i7OhkIRNt1uJ/y3qpowlU7icjtSgFPIl/GjMmBxhtwoIqHAnowFLh1Ur5G6S36GCFo65ymClnYfEIM/2x1+wPQ==
-  /@snowpack/plugin-typescript/1.2.1_typescript@4.2.2:
+  /@snowpack/plugin-typescript/1.2.1_typescript@4.2.3:
     dependencies:
       execa: 5.0.0
       npm-run-path: 4.0.1
-      typescript: 4.2.2
+      typescript: 4.2.3
     dev: true
     peerDependencies:
       typescript: '*'
@@ -746,12 +746,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
-  /configent/2.1.1-0:
-    dependencies:
-      dotenv: 8.2.0
-    dev: false
-    resolution:
-      integrity: sha512-TIYTcbTrSjMh6Yz0YrdXOJbQeuozC00lViKZ2Gq/y0Z3GwySQvFPiNzavqaM4dXZf23MmPF8x0MMPu47g9Id+Q==
   /configent/2.1.4:
     dependencies:
       dotenv: 8.2.0
@@ -3249,7 +3243,7 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg==
-  /postcss/8.2.6:
+  /postcss/8.2.7:
     dependencies:
       colorette: 1.2.2
       nanoid: 3.1.20
@@ -3258,7 +3252,7 @@ packages:
     engines:
       node: ^10 || ^12 || >=14
     resolution:
-      integrity: sha512-xpB8qYxgPuly166AGlpRjUdEYtmOWx2iCwGmrv4vqZL9YPVviDVPZPRXxnXr6xPZOdxQ9lp3ZBFCRgWJ7LE3Sg==
+      integrity: sha512-DsVLH3xJzut+VT+rYr0mtvOtpTjSyqDwPf5EZWXcb0uAKfitGpTY9Ec+afi2+TgdN8rWS9Cs88UDYehKo/RvOw==
   /prelude-ls/1.1.2:
     dev: false
     engines:
@@ -3644,16 +3638,16 @@ packages:
     dev: true
     resolution:
       integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
-  /spassr/2.2.0:
+  /spassr/2.2.3:
     dependencies:
       commander: 6.2.1
-      configent: 2.1.1-0
+      configent: 2.1.4
       express: 4.17.1
       tossr: 1.4.1
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-pz8/p8C6Kq1DOwm+8nlYw/mdToma7JVA1Nhhkp/6Ws43Vu7MWq+KW9K5dw8+MjFZAkQBI8KLSWe+NTcrxjOVmQ==
+      integrity: sha512-qRlBgLDYw4zSG99QgyZTlQz7ICWjARyxO1O9kWF4akq+EHaSdb+JYdTD3loMwUXnVhBh12pl86cRyvlhqnNbpQ==
   /spdx-correct/3.1.1:
     dependencies:
       spdx-expression-parse: 3.0.1
@@ -3807,7 +3801,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
-  /svelte-check/1.1.36_bb3f26321fb3a79de3e84e6f9a3793b4:
+  /svelte-check/1.2.3_8f10dc7cb679adeddc44418817500f8a:
     dependencies:
       chalk: 4.1.0
       chokidar: 3.5.1
@@ -3816,8 +3810,8 @@ packages:
       minimist: 1.2.5
       source-map: 0.7.3
       svelte: 3.35.0
-      svelte-preprocess: 4.6.9_a08180c022308a34fe311f76d5152fb0
-      typescript: 4.2.2
+      svelte-preprocess: 4.6.9_f82e5bdae6fd1f4cca4d138b50406ebe
+      typescript: 4.2.3
     dev: true
     hasBin: true
     peerDependencies:
@@ -3825,7 +3819,7 @@ packages:
       postcss-load-config: '*'
       svelte: ^3.24.0
     resolution:
-      integrity: sha512-vJ5/GGCNUlTtI0Ep6kD/oeISUSEvPBeY+uPT5B1koBxyo10wfkucReJiuDvyNpWokJ9v5C8TL2TeJ27/AyUhdg==
+      integrity: sha512-EAuxtwjpTL2K7MHCDKUtt8YeDhM8sf8ZHTdODfE7yYb53nDD8u+p5I5Ub77VPSqgHUlaJh66ieB14rrLeA9YxA==
   /svelte-hmr/0.12.7_svelte@3.35.0:
     dependencies:
       svelte: 3.35.0
@@ -3834,16 +3828,24 @@ packages:
       svelte: '>=3.19.0'
     resolution:
       integrity: sha512-f5FlHAO7o5vuRI2ZV5ZG1CTP0dtOekYDMQxjeELOR7nHJpVTXLNosFh822FM9WxYr0Vbv17caXRCOKD+l4ThEA==
-  /svelte-preprocess/4.6.9_a08180c022308a34fe311f76d5152fb0:
+  /svelte-hmr/0.12.9_svelte@3.35.0:
+    dependencies:
+      svelte: 3.35.0
+    dev: true
+    peerDependencies:
+      svelte: '>=3.19.0'
+    resolution:
+      integrity: sha512-SGE7Odznj4dqZtUVIWcoPCvZ9gHImxVIIjrz+O3DDSi0j4OaSLim6MRF4UdhlBKeW3glSRc+tXNSKYvM5x+Dyw==
+  /svelte-preprocess/4.6.9_f82e5bdae6fd1f4cca4d138b50406ebe:
     dependencies:
       '@types/pug': 2.0.4
       '@types/sass': 1.16.0
       detect-indent: 6.0.0
-      postcss: 8.2.6
+      postcss: 8.2.7
       postcss-load-config: 3.0.1
       strip-indent: 3.0.0
       svelte: 3.35.0
-      typescript: 4.2.2
+      typescript: 4.2.3
     dev: true
     engines:
       node: '>= 9.11.2'
@@ -3886,14 +3888,14 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-SROWH0rB0DJ+0Ii264cprmNu/NJyZacs5wFD71ya93Cg/oA2lKHgQm4F6j0EWA4ktFMzeuJJm/eX6fka39hEHA==
-  /svelte-windicss-preprocess/2.2.4:
+  /svelte-windicss-preprocess/2.3.1:
     dependencies:
       chalk: 4.1.0
       magic-string: 0.25.7
-      windicss: 2.2.2
+      windicss: 2.2.8
     dev: true
     resolution:
-      integrity: sha512-IDF0AmN+0CVHZB14CUiqP80SSPaas3edFR1mhDHXLzNxH9SlORKA1ahu8Ynyj2BFDOyVlEUyqhVntzk5aLow9Q==
+      integrity: sha512-YuLxBE5C3D0hpJPtLgQP+MmgMzEkGNPmUN4eKHB6aQfkjyvNhQbx0xWuGrN++kVphFafZggRm5pmJnedgxHbmw==
   /svelte/3.35.0:
     dev: false
     engines:
@@ -4055,13 +4057,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-6OSu9PTIzmn9TCDiovULTnET6BgXtDYL4Gg4szY+cGsc3JP1dQL8qvE8kShTRx1NIw4Q9IBHlwODjkjWEtMUyA==
-  /typescript/4.2.2:
+  /typescript/4.2.3:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-tbb+NVrLfnsJy3M59lsDgrzWIflR4d4TIUjz+heUnHZwdF7YsrMTKoRERiIvI2lvBG95dfpLxB21WZhys1bgaQ==
+      integrity: sha512-qOcYwxaByStAWrBf4x0fibwZvMRG+r4cQoTjbPtUlrWjBHbmCAww1i448U0GJ+3cNNEtebDteo/cHOR3xJ4wEw==
   /uarray/1.0.0:
     dev: true
     resolution:
@@ -4269,13 +4271,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
-  /windicss/2.2.2:
+  /windicss/2.2.8:
     dev: true
     engines:
       node: '>= 12'
     hasBin: true
     resolution:
-      integrity: sha512-+yOlyx+j3/MJaoqhZb6BjjXnGMJcIdjaKs8cIYXkCr5t/wJLFBS35uDrqxo31IaSHOo/gtw+fcMyw8D+3oq6qg==
+      integrity: sha512-zNh65NiuGDChJvCjkEEMpA5NpykouYOc5vGeT3ynC5XydbENJYCEP7Jt9cfVD9BAG+OQxsNYtsYOabtzQeq4Iw==
   /word-wrap/1.2.3:
     dev: false
     engines:
@@ -4355,25 +4357,25 @@ packages:
       integrity: sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==
 specifiers:
   '@mdi/js': 5.9.55
-  '@roxi/routify': 2.12.12
+  '@roxi/routify': 2.14.0
   '@snowpack/plugin-run-script': 2.3.0
   '@snowpack/plugin-svelte': 3.5.2
   '@snowpack/plugin-typescript': 1.2.1
   cssnano: 4.1.10
   mdi-svelte: 1.1.2
   npm-run-all: 4.1.5
-  postcss: 8.2.6
+  postcss: 8.2.7
   postcss-load-config: 3.0.1
   postcss-preset-env: 6.7.0
   prettier: 2.2.1
   prettier-plugin-svelte: 2.2.0
   snowpack: 3.0.13
   snowpack-plugin-hash: 0.14.2
-  spassr: 2.2.0
+  spassr: 2.2.3
   svelte: 3.35.0
-  svelte-check: 1.1.36
-  svelte-hmr: 0.12.7
+  svelte-check: 1.2.3
+  svelte-hmr: 0.12.9
   svelte-preprocess: 4.6.9
-  svelte-windicss-preprocess: 2.2.4
-  typescript: 4.2.2
-  windicss: 2.2.2
+  svelte-windicss-preprocess: 2.3.1
+  typescript: 4.2.3
+  windicss: 2.2.8
