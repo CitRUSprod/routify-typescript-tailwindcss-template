@@ -1,5 +1,9 @@
 const isDev = process.env.NODE_ENV === "development"
 
+const srcMount = {
+    src: "/build"
+}
+
 module.exports = {
     devOptions: {
         port: 5000,
@@ -14,11 +18,12 @@ module.exports = {
         target: "es2020"
     },
     mount: {
-        assets: {
+        ...(isDev ? {} : srcMount),
+        "src/static": {
             url: "/",
             static: true
         },
-        src: "/build",
+        ...(isDev ? srcMount : {}),
         ".routify": "/routify"
     },
     alias: {
